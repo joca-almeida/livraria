@@ -6,7 +6,7 @@ go
 
 create table Livros(
 	CdLivro int primary key identity,
-	TituloLivro varchar(30) not null,
-	SinopseLivro varchar(80) not null,
-	AutorLivro varchar(30) not null
+	TituloLivro varchar(80) not null,
+	SinopseLivro varchar(150) not null,
+	AutorLivro varchar(80) not null
 	)
