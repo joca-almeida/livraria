@@ -1,0 +1,7 @@
+C:\Users\jocal\Desktop\Livraria\Models\bin\Debug\Models.dll
+C:\Users\jocal\Desktop\Livraria\Models\bin\Debug\Models.pdb
+C:\Users\jocal\Desktop\Livraria\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\jocal\Desktop\Livraria\Models\obj\Debug\Models.dll
+C:\Users\jocal\Desktop\Livraria\Models\obj\Debug\Models.pdb
+C:\Users\jocal\Desktop\Livraria\Models\bin\Debug\Models.dll.CodeAnalysisLog.xml
+C:\Users\jocal\Desktop\Livraria\Models\bin\Debug\Models.dll.lastcodeanalysissucceeded
