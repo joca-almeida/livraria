@@ -49,7 +49,7 @@ namespace Web
             }
             else
             {
-                ExibirMensagem("Por favor, digite o código do livro");
+                ExibirMensagem("Código digitado não é válido.");
             }            
         }
     }

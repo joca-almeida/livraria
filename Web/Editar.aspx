@@ -23,6 +23,8 @@
     </asp:GridView>
     <br />
         <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCodigo" ErrorMessage="Código obrigatório." ForeColor="Red"></asp:RequiredFieldValidator>
+    <br />
         *Digite o código e clique em editar.
     <br />
     <br />

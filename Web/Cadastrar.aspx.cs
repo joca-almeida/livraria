@@ -21,8 +21,6 @@ namespace Web
                 "alerta", "alert('" + mensagem + "')", true);
         }
 
-        
-
         protected void btnCadastrar_Click(object sender, EventArgs e)
         {
             ServiceReference1.Livro objlivro = new ServiceReference1.Livro();

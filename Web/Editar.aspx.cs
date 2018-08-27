@@ -30,32 +30,44 @@ namespace Web
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            int codigo = Convert.ToInt32(txtCodigo.Text);
+            int n = 0;
 
-            var livroDAL = new ServiceReference1.ServiceClient();
-            var objLivro = new ServiceReference1.Livro();
+            bool verifica = int.TryParse(txtCodigo.Text, out n);
 
-            objLivro = livroDAL.BuscarLivro(codigo);
-
-            if (objLivro != null)
+            if (verifica)
             {
-                txtCodigo.Text = objLivro.CdLivro.ToString();
-                txtAutor.Text = objLivro.NomeAutor;
-                txtSinopse.Text = objLivro.SinopseLivro;
-                txtTitulo.Text = objLivro.TituloLivro;
+                int codigo = Convert.ToInt32(txtCodigo.Text);
 
-                btnEditar.Enabled = false;
-                txtCodigo.Enabled = false;
+                var livroDAL = new ServiceReference1.ServiceClient();
+                var objLivro = new ServiceReference1.Livro();
 
-                txtAutor.Enabled = true;
-                txtTitulo.Enabled = true;
-                txtSinopse.Enabled = true;
-                btnSalvar.Enabled = true;
+                objLivro = livroDAL.BuscarLivro(codigo);
+
+                if (objLivro != null)
+                {
+                    txtCodigo.Text = objLivro.CdLivro.ToString();
+                    txtAutor.Text = objLivro.NomeAutor;
+                    txtSinopse.Text = objLivro.SinopseLivro;
+                    txtTitulo.Text = objLivro.TituloLivro;
+
+                    btnEditar.Enabled = false;
+                    txtCodigo.Enabled = false;
+
+                    txtAutor.Enabled = true;
+                    txtTitulo.Enabled = true;
+                    txtSinopse.Enabled = true;
+                    btnSalvar.Enabled = true;
+                }
+                else
+                {
+                    ExibirMensagem("Livro não encontrado");
+                }
             }
             else
             {
-                ExibirMensagem("Livro não encontrado");
+                ExibirMensagem("Código digitado não é válido.");
             }
+            
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)

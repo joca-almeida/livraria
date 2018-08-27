@@ -3,6 +3,7 @@
     <h4>Tela para excluir livros.</h4>
     <br />Código*<br />
     <asp:TextBox ID="txtCodigo" runat="server" Width="174px"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCodigo" ErrorMessage="Código obrigatório." ForeColor="Red"></asp:RequiredFieldValidator>
     <br />
     *Utilize o código listado abaixo.<br />
     <br />
